@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gietu Leave </title>
+  <!-- jquery cdn  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!-- sweet alert cdn  -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- font awesome cdn for icons  -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- my css file  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="content">
+    <!-- scroll bar of the login div -->
+   
+    <!-- form start here  -->
+<!--     
+      <div class="field">
+        <span class="fa fa-sharp fa-light fa-lock-keyhole"></span>
+        <input name="Username" type="text" placeholder="UserName" required>
+
+      </div> -->
+      <div class="field">
+        <span class="fa fa-lock"></span>
+        <input name="pass" id="passwordbox" type="text" placeholder="Your Generated Password" disabled>
+        <span class="fa fa-solid fa-copy fa-xl" id="copy"></span>
+      </div>
+      <div class="slider">
+        
+        
+        </div>
+      <div class="selection">
+        <input class="slider" type="range" min="5" max="128" value="10" oninput="passwordLength.innerText = this.value"><span>Password Strength: </span><span  id="passwordLength">10</span><br>
+        <input for="Symbols" type="checkbox" id="Symbols" name="select" value="Symbols" />
+        <label for="Symbols">Include Symbols</label><br>
+        <input for="Numbers" type="checkbox" id="Numbers" name="select" value="Numbers" />
+        <label for="Numbers">Include Numbers</label><br>
+        <input for="UppercaseCharacters" type="checkbox" id="UppercaseCharacters" name="select" value="UppercaseCharacters" />
+        <label for="UppercaseCharacters">Include Uppercase Characters</label><br>
+        <input for="LowercaseCharacters" type="checkbox" id="LowercaseCharacters" name="select" value="LowercaseCharacters" />
+        <label for="LowercaseCharacters">Include Lowercase Characters</label>
+      </div>
+      <button name="generate" id="generate" style="margin-right: 10px;">Generate New</button>
+      
+      <button name="clear" id="clear">Clear</button>
+      
+    
+  </div>
+
+  <!-- my security file  -->
+   <script src="assets/js/security/security.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="assets/js/security/script.js"></script>
+</body>
+
+</html>
